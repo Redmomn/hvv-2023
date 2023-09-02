@@ -46,8 +46,8 @@ export default defineUserConfig<DefaultThemeOptions>({
     // 主题和它的配置
     theme: '@vuepress/theme-default',
     themeConfig: {
-        repo: 'Mrs4s/go-cqhttp',
-        docsRepo: 'ishkong/go-cqhttp-docs',
+        repo: 'Redmomn/hvv-2023',
+        docsRepo: 'Redmomn/hvv-2023',
         docsBranch: 'master',
         docsDir: 'docs',
         editLinkText: "编辑此页",
