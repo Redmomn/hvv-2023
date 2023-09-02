@@ -7,7 +7,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     title: '2023hvv漏洞收集',
     description: ' ',
     base: '/hvv-2023/',
-    head:[
+    head: [
         ['link', { rel: 'icon', href: 'https://www.lovenie.icu/blog/wp-content/uploads/2023/09/宁宁.jpg' }]
     ],
     plugins: [
@@ -15,7 +15,9 @@ export default defineUserConfig<DefaultThemeOptions>({
         [
             '@vuepress/pwa',
             {
-                skipWaiting: true
+                skipWaiting: true,
+                serviceWorker: true,
+                updatePopup: true
             }
         ],
         [
@@ -38,7 +40,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         [
             "@vuepress/plugin-docsearch",
             {
-                
+
             }
         ]
     ],
