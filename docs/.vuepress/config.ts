@@ -6,7 +6,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     lang: 'zh-CN',
     title: '2023hvv漏洞收集',
     description: ' ',
-    base: '/',
+    base: '/hvv-2023/',
     head:[
         ['link', { rel: 'icon', href: 'https://www.lovenie.icu/blog/wp-content/uploads/2023/09/宁宁.jpg' }]
     ],
