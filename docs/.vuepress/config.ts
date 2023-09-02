@@ -4,8 +4,8 @@ import type { DefaultThemeOptions } from 'vuepress'
 export default defineUserConfig<DefaultThemeOptions>({
     // 站点配置
     lang: 'zh-CN',
-    title: 'go-cqhttp 帮助中心',
-    description: 'Onebot 的 golang 实现，轻量、原生跨平台',
+    title: '2023hvv漏洞收集',
+    description: ' ',
     base: '/',
     head:[
         ['link', { rel: 'icon', href: 'https://www.lovenie.icu/blog/wp-content/uploads/2023/09/宁宁.jpg' }]
@@ -38,11 +38,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         [
             "@vuepress/plugin-docsearch",
             {
-                apiKey: '4cfe0f33be16c346fed77effff922cf8',
-                indexName: 'go-cqhttp',
-                algoliaOptions: {
-                    facetFilters: ["lang:en-US"],
-                },
+                
             }
         ]
     ],
@@ -52,7 +48,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     themeConfig: {
         repo: 'Mrs4s/go-cqhttp',
         docsRepo: 'ishkong/go-cqhttp-docs',
-        docsBranch: 'main',
+        docsBranch: 'master',
         docsDir: 'docs',
         editLinkText: "编辑此页",
         lastUpdated: true,
@@ -62,16 +58,16 @@ export default defineUserConfig<DefaultThemeOptions>({
         warning: "注意",
         danger: "警告",
         backToHome: "返回首页",
-        navbar: [
-            { text: 'Guide', children: ['/guide/', '/guide/quick_start.md', '/guide/config.md', '/guide/eventfilter.md', '/guide/file.md', '/guide/achieve.md', '/guide/docker.md'] },
-            { text: 'API', children: ['/api/', '/api/guild.md'] },
-            { text: 'Event', children: ['/event/', '/event/guild.md'] },
-            { text: 'CQ Code', link: '/cqcode/' },
-            { text: 'Guild', link: '/guild/'},
-            { text: 'Reference', children: ['/reference/', '/reference/data_struct.md'] },
-            { text: 'Advanced', link: '/advanced/'},
-            { text: 'FAQ', link: '/faq/' }
-        ],
+        // navbar: [
+        //     { text: 'Guide', children: ['/guide/', '/guide/quick_start.md', '/guide/config.md', '/guide/eventfilter.md', '/guide/file.md', '/guide/achieve.md', '/guide/docker.md'] },
+        //     { text: 'API', children: ['/api/', '/api/guild.md'] },
+        //     { text: 'Event', children: ['/event/', '/event/guild.md'] },
+        //     { text: 'CQ Code', link: '/cqcode/' },
+        //     { text: 'Guild', link: '/guild/'},
+        //     { text: 'Reference', children: ['/reference/', '/reference/data_struct.md'] },
+        //     { text: 'Advanced', link: '/advanced/'},
+        //     { text: 'FAQ', link: '/faq/' }
+        // ],
         sidebar: "auto",
     },
 
