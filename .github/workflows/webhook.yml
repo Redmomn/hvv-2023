@@ -3,6 +3,9 @@ name: webhook
 on:
   push:
     branches: [gh-pages]
+  create:
+    branches:
+      - '*'
 
 jobs:
   send-webhook:
