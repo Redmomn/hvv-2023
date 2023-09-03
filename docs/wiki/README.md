@@ -22,6 +22,6 @@
 
 - PS:`X-Ajaxpro-Method`：用于指定在Ajax请求中要调用的服务器端方法的名称
 
-![Alt text]($withBase('/img/QVD-2023-13615.png'))
+![Alt text](/images/QVD-2023-13615.png)
 
 - [相关链接](https://blog.csdn.net/qq_41904294/article/details/131350965)
