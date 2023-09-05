@@ -1,13 +1,13 @@
 {
     "version": 2,
     "framework": "vuepress",
-    "rewrites": [
+
+    "routes": [
         {
-            "source": "/hvv-2023",
-            "destination": "/"
+            "src": "/hvv-2023",
+            "dest": "/"
         }
     ],
-
     "buildCommand": "yarn docs:build",
     "outputDirectory": "docs/.vuepress/dist",
     "installCommand": "yarn install"
