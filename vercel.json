@@ -1,20 +1,10 @@
 {
     "version": 2,
     "framework": "vuepress",
-    "routes": [
-        {
-            "src": "/hvv-2023",
-            "dest": "/hvv-2023"
-        },
-        {
-            "src": "/hvv-2023/(.*)",
-            "dest": "/hvv-2023/$1"
-        }
-    ],
     "rewrites": [
         {
             "source": "/hvv-2023",
-            "destination": "/some-other-path"
+            "destination": "/hvv-2023"
         }
     ],
     "buildCommand": "yarn docs:build",
