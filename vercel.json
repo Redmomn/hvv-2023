@@ -11,6 +11,12 @@
             "dest": "/$1"
         }
     ],
+    "git": {
+        "deploymentEnabled": {
+            "master": true,
+            "gh-pages": false
+        }
+    },
     "buildCommand": "yarn docs:build",
     "outputDirectory": "docs/.vuepress/dist",
     "installCommand": "yarn install"
