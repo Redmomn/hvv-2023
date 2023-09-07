@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://www.lovenie.icu/blog/wp-content/uploads/2023/09/ciallo.jpg
+heroImage: /images/www/ciallo.jpg
 tagline: Ciallo～(∠・ω< )⌒☆
 
 actions:

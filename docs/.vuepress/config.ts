@@ -8,7 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     description: ' ',
     base: '/hvv-2023/',
     head: [
-        ['link', { rel: 'icon', href: 'https://www.lovenie.icu/blog/wp-content/uploads/2023/09/宁宁.jpg' }]
+        ['link', { rel: 'icon', href: '/images/www/宁宁.jpg' }]
     ],
     plugins: [
         ['@vuepress/back-to-top'],
@@ -58,9 +58,9 @@ export default defineUserConfig<DefaultThemeOptions>({
         warning: "注意",
         danger: "警告",
         backToHome: "返回首页",
-        navbar:[
-            {text:'开始', link:'/guide/'},
-            {text:'漏洞',children:['/wiki/','/wiki/重点漏洞.md']}
+        navbar: [
+            { text: '开始', link: '/guide/' },
+            { text: '漏洞', children: ['/wiki/', '/wiki/重点漏洞.md'] }
         ],
         // navbar: [
         //     { text: 'Guide', children: ['/guide/', '/guide/quick_start.md', '/guide/config.md', '/guide/eventfilter.md', '/guide/file.md', '/guide/achieve.md', '/guide/docker.md'] },
