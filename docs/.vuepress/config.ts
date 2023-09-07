@@ -6,7 +6,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     lang: 'zh-CN',
     title: '2023hvv漏洞收集',
     description: ' ',
-    base: '/hvv-2023/',
+    base: '/',
     head: [
         ['link', { rel: 'icon', href: '/images/www/宁宁.jpg' }]
     ],

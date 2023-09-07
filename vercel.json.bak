@@ -1,6 +1,16 @@
 {
     "version": 2,
     "framework": "vuepress",
+    "routes": [
+        {
+            "src": "/hvv-2023",
+            "dest": "/"
+        },
+        {
+            "src": "/hvv-2023/(.*)",
+            "dest": "/$1"
+        }
+    ],
     "git": {
         "deploymentEnabled": {
             "master": true,
