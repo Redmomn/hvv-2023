@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: https://www.lovenie.icu/blog/wp-content/uploads/2023/03/v2-811b30409fa05d417f72ceeff2eac3f8_r.jpg
-tagline: 夹带私货
+heroImage: https://www.lovenie.icu/blog/wp-content/uploads/2023/09/ciallo.jpg
+tagline: Ciallo～(∠・ω< )⌒☆
 
 actions:
   - text: 仓库地址
