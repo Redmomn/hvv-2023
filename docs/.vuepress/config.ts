@@ -4,8 +4,8 @@ import type { DefaultThemeOptions } from 'vuepress'
 export default defineUserConfig<DefaultThemeOptions>({
     // 站点配置
     lang: 'zh-CN',
-    title: '2023hvv漏洞收集 Ciallo～(∠・ω< )⌒☆',
-    description: ' ',
+    title: '2023hvv漏洞收集',
+    description: 'Ciallo～(∠・ω< )⌒☆',
     base: '/',
     head: [
         ['link', { rel: 'icon', href: '/images/www/宁宁.jpg' }]

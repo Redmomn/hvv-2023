@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/www/ciallo.jpg
+heroImage: /images/www/ciallo.png
 tagline: Ciallo～(∠・ω< )⌒☆
 
 actions:
