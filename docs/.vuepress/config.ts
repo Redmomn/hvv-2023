@@ -4,7 +4,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 export default defineUserConfig<DefaultThemeOptions>({
     // 站点配置
     lang: 'zh-CN',
-    title: '2023hvv漏洞收集',
+    title: '2023hvv漏洞收集 Ciallo～(∠・ω< )⌒☆',
     description: ' ',
     base: '/',
     head: [
