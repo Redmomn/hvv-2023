@@ -38,7 +38,12 @@ export default defineUserConfig<DefaultThemeOptions>({
         [
             "@vuepress/plugin-docsearch",
             {
-
+                appId: '853MBK3DG8',
+                apiKey: 'ee36841771b23b4f1d3eb6a93e49177e',
+                indexName: '853MBK3DG8',
+                algoliaOptions: {
+                    facetFilters: ["lang:en-US"],
+                },
             }
         ]
     ],
